@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+$white: #ffffff;
+$semi-ash: #F8F9FB;
+$black: #181818;
+$blue-btn: #0F47C0;
+$black-btn: #1C2333;
+$text-color: #747474;
+$pink: #FAB8C4;
+$off-white: #F6F7F9;
+$yellow:#FFDA55;
+$footer-color-1: #1B2E3D;
+$footer-color-2:#101E2A;
+$box-shadow-color:#7474741A;
+$box-shadow--hover-color:#74747440;
+$box-shadow: 0px 7px 10px 3px #7474741A;
+$box-shadow-hover: 0px 10px 20px 3px #74747440;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 111, 197);
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  margin: 0;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  color: $black;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 90%;
+}
+
+#testimonials {
+  padding: 70px 0px;
+
+  .container-inner {
+    #bigCarousel {
+      position: relative;
+
+      .carousel-inner {
+        .carousel-item {
+          margin: 0px 50px;
+
+          .item__inner {
+            .card {
+              max-width: 1000px;
+              min-height: 490px;
+              margin: 0 auto;
+              position: relative;
+              padding: 0;
+              border: 1px solid #419BF9;
+              border-radius: 0px;
+              padding: 77px 70px 77px 210px;
+              background: #F6FAFF;
+              // margin-right: 0;
+
+              .btn-wrapper {
+                position: absolute;
+                z-index: 10;
+                bottom: 0;
+                right: 0px;
+                width: 100px;
+                height: 50px;
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                  width: 50px;
+                  height: 50px;
+
+                  img {
+                    width: 50px;
+                    height: 50px;
+
+                  }
+                }
+              }
+
+              .card-head {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -140px;
+
+                .client-image {
+                  width: 281px;
+                  height: 335px;
+                  border-radius: 10px;
+                  border: 3px solid #ffffff;
+                  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+                  object-fit: cover;
+                  object-position: center;
+                }
+              }
+
+              .slide-count {
+                position: absolute;
+                bottom: 16px;
+                right: 140px;
+                font-size: 14px;
+                font-weight: bold;
+                color: gray;
+              }
+
+              .card-body {
+                padding: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                .company-details {
+                  display: block;
+                  width: 100%;
+                  .company-text {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    .comp-logo {
+                      height: 60px;
+                      object-fit: cover;
+                      object-position: center;
+                    }
+
+                    .divider {
+                      margin: 0px 10px;
+                    }
+                  }
+
+                }
+
+                .client-says {
+                  height: 100%;
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  .quote-img{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    path{
+                      fill: #6294ff;
+                    }
+                  }
+                  q{
+                    z-index: 2;
+                  }
+                }
+              }
+
+              .card-footer {
+                background: transparent;
+                border: none;
+                padding: 0;
+
+                .client-name {
+                  font-size: 18px;
+                }
+
+                .profession {
+                  font-size: 14px;
+                  color: gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.carousel-inner > .carousel-item {
+  transition: .5s linear  !important;
+}
+
+.item__inner .card-body, .item__inner .card-footer,.item__inner .slide-count{
+  opacity: 0.3;
+}
+
+.carousel-inner > .carousel-item.active .item__inner .card-head, .carousel-inner > .carousel-item.active .item__inner .card-body, .carousel-inner > .carousel-item.active .item__inner .card-footer,.carousel-inner > .carousel-item.active .item__inner .slide-count{
+  opacity: 1;
+  transition: opacity .1s;
+}
+
+
+.carousel-control-prev{
+  .prev-btn{
+    opacity: 1;
+    transition: .5s;
+    position: absolute;
+  }
+  .prev-hover{
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+  }
+  &:hover{
+    .prev-btn{
+      opacity: 0;
+    }
+    .prev-hover{
+      opacity: 1;
+    }
+  }
+}
+
+.carousel-control-next{
+  .next-btn{
+    opacity: 1;
+    transition: .5s;
+    position: absolute;
+  }
+  .next-hover{
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+  }
+  &:hover{
+    .next-btn{
+      opacity: 0;
+    }
+    .next-hover{
+      opacity: 1;
+    }
+  }
+}
+
+
+@media screen and (max-width:1024px) and (orientation: landscape) {
+
+  #testimonials {
+    padding: 70px 0px;
+
+    .container-inner {
+      #bigCarousel {
+        position: relative;
+
+        .carousel-inner {
+          overflow: visible;
+          .carousel-item {
+            margin: 0px 0px;
+            width: 100%;
+            overflow: visible;
+            .item__inner {
+              overflow: visible;
+              .card {
+                max-width: 100%;
+                min-height: auto;
+                margin: 0 auto;
+                position: relative;
+                padding: 0;
+                border: 1px solid #419BF9;
+                border-radius: 0px;
+                padding: 10px 20px 20px 20px;
+                background: #F6FAFF;
+                overflow: visible;
+                .btn-wrapper {
+                  position: absolute;
+                  z-index: 10;
+                  bottom: 0;
+                  right: 0px;
+                  width: 100px;
+                  height: 50px;
+
+                  .carousel-control-prev,
+                  .carousel-control-next {
+                    width: 50px;
+                    height: 50px;
+
+                    img {
+                      width: 50px;
+                      height: 50px;
+
+                    }
+                  }
+                }
+
+                .card-head {
+                  position: absolute;
+                  top: 30px;
+                  left: 20px;
+
+                  .client-image {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 10px;
+                    border: 3px solid #ffffff;
+                    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+                    object-fit: cover;
+                    object-position: center;
+                  }
+                }
+
+                .slide-count {
+                  position: absolute;
+                  bottom: 16px;
+                  right: 140px;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: gray;
+                }
+
+                .card-body {
+                  padding: 0;
+                  position: relative;
+                  display: block;
+                  height: 100%;
+                  .company-details {
+                    display: block;
+                    padding-left: 150px;
+                    .company-text {
+                      display: block;
+                      position: relative;
+                      width: 100%;
+                      .comp-logo {
+                        height: 50px;
+                        object-fit: cover;
+                        object-position: center;
+                        margin-bottom: 10px;
+                      }
+                      p{
+                        display: block;
+                      }
+                      .divider {
+                        display: none;
+                      }
+                    }
+
+                  }
+
+                  .client-says {
+                    display: flex;
+                    margin-top: 13px;
+                    margin-bottom: 16px;
+                    align-items: center;
+                    height: auto;
+                    justify-content: center;
+                  }
+                }
+
+                .card-footer {
+                  background: transparent;
+                  border: none;
+                  padding: 0;
+
+                  .client-name {
+                    font-size: 18px;
+                  }
+
+                  .profession {
+                    font-size: 14px;
+                    color: gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+@media screen and (max-width:425px) {
+
+  #testimonials {
+    padding: 70px 0px;
+
+    .container-inner {
+      #bigCarousel {
+        position: relative;
+
+        .carousel-inner {
+          overflow: visible;
+          .carousel-item {
+            margin: 0px 0px;
+            width: 100%;
+            overflow: visible;
+            .item__inner {
+              overflow: visible;
+              .card {
+                max-width: 100%;
+                min-height: auto;
+                margin: 0 auto;
+                position: relative;
+                padding: 0;
+                border: 1px solid #419BF9;
+                border-radius: 0px;
+                padding: 10px 20px 70px 20px;
+                background: #F6FAFF;
+                overflow: visible;
+                .btn-wrapper {
+                  position: absolute;
+                  z-index: 10;
+                  bottom: 0;
+                  right: 0px;
+                  width: 100%;
+                  height: 50px;
+
+                  .carousel-control-prev,
+                  .carousel-control-next {
+                    width: 50px;
+                    height: 50px;
+
+                    img {
+                      width: 50px;
+                      height: 50px;
+
+                    }
+                  }
+                }
+
+                .card-head {
+                  position: absolute;
+                  top: 30px;
+                  left: 20px;
+
+                  .client-image {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 10px;
+                    border: 3px solid #ffffff;
+                    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+                    object-fit: cover;
+                    object-position: center;
+                  }
+                }
+
+                .slide-count {
+                  position: absolute;
+                  bottom: 16px;
+                  left: 50%;
+                  transform: translateX(-30%);
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: gray;
+                }
+
+                .card-body {
+                  padding: 0;
+                  position: relative;
+                  display: block;
+                  height: 100%;
+                  .company-details {
+                    display: block;
+                    padding-left: 150px;
+                    .company-text {
+                      display: block;
+                      position: relative;
+                      width: 100%;
+                      .comp-logo {
+                        height: 50px;
+                        object-fit: cover;
+                        object-position: center;
+                        margin-bottom: 10px;
+                      }
+                      p{
+                        display: block;
+                      }
+                      .divider {
+                        display: none;
+                      }
+                    }
+
+                  }
+
+                  .client-says {
+                    display: flex;
+                    margin-top: 13px;
+                    margin-bottom: 16px;
+                    align-items: center;
+                    height: auto;
+                    justify-content: center;
+                  }
+                }
+
+                .card-footer {
+                  background: transparent;
+                  border: none;
+                  padding: 0;
+
+                  .client-name {
+                    font-size: 18px;
+                  }
+
+                  .profession {
+                    font-size: 14px;
+                    color: gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

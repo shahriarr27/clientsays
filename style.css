@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2e6fc5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  margin: 0;
+  color: #747474;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  color: #181818;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 90%;
+}
+
+#testimonials {
+  padding: 70px 0px;
+}
+
+#testimonials .container-inner #bigCarousel {
+  position: relative;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item {
+  margin: 0px 50px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card {
+  max-width: 1000px;
+  min-height: 490px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  border: 1px solid #419BF9;
+  border-radius: 0px;
+  padding: 77px 70px 77px 210px;
+  background: #F6FAFF;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0px;
+  width: 100px;
+  height: 50px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev,
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next {
+  width: 50px;
+  height: 50px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev img,
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next img {
+  width: 50px;
+  height: 50px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -140px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head .client-image {
+  width: 281px;
+  height: 335px;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .slide-count {
+  position: absolute;
+  bottom: 16px;
+  right: 140px;
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body {
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details {
+  display: block;
+  width: 100%;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .comp-logo {
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .divider {
+  margin: 0px 10px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says .quote-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says .quote-img path {
+  fill: #6294ff;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says q {
+  z-index: 2;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .client-name {
+  font-size: 18px;
+}
+
+#testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .profession {
+  font-size: 14px;
+  color: gray;
+}
+
+.carousel-inner > .carousel-item {
+  -webkit-transition: .5s linear  !important;
+  transition: .5s linear  !important;
+}
+
+.item__inner .card-body, .item__inner .card-footer, .item__inner .slide-count {
+  opacity: 0.3;
+}
+
+.carousel-inner > .carousel-item.active .item__inner .card-head, .carousel-inner > .carousel-item.active .item__inner .card-body, .carousel-inner > .carousel-item.active .item__inner .card-footer, .carousel-inner > .carousel-item.active .item__inner .slide-count {
+  opacity: 1;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+}
+
+.carousel-control-prev .prev-btn {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+}
+
+.carousel-control-prev .prev-hover {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+}
+
+.carousel-control-prev:hover .prev-btn {
+  opacity: 0;
+}
+
+.carousel-control-prev:hover .prev-hover {
+  opacity: 1;
+}
+
+.carousel-control-next .next-btn {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+}
+
+.carousel-control-next .next-hover {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+}
+
+.carousel-control-next:hover .next-btn {
+  opacity: 0;
+}
+
+.carousel-control-next:hover .next-hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  #testimonials {
+    padding: 70px 0px;
+  }
+  #testimonials .container-inner #bigCarousel {
+    position: relative;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner {
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item {
+    margin: 0px 0px;
+    width: 100%;
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner {
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card {
+    max-width: 100%;
+    min-height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    border: 1px solid #419BF9;
+    border-radius: 0px;
+    padding: 10px 20px 20px 20px;
+    background: #F6FAFF;
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev,
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev img,
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next img {
+    width: 50px;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head .client-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .slide-count {
+    position: absolute;
+    bottom: 16px;
+    right: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body {
+    padding: 0;
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details {
+    display: block;
+    padding-left: 150px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .comp-logo {
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-bottom: 10px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text p {
+    display: block;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .divider {
+    display: none;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .client-name {
+    font-size: 18px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .profession {
+    font-size: 14px;
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #testimonials {
+    padding: 70px 0px;
+  }
+  #testimonials .container-inner #bigCarousel {
+    position: relative;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner {
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item {
+    margin: 0px 0px;
+    width: 100%;
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner {
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card {
+    max-width: 100%;
+    min-height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    border: 1px solid #419BF9;
+    border-radius: 0px;
+    padding: 10px 20px 70px 20px;
+    background: #F6FAFF;
+    overflow: visible;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev,
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-prev img,
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .btn-wrapper .carousel-control-next img {
+    width: 50px;
+    height: 50px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-head .client-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.15);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .slide-count {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body {
+    padding: 0;
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details {
+    display: block;
+    padding-left: 150px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .comp-logo {
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-bottom: 10px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text p {
+    display: block;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .company-details .company-text .divider {
+    display: none;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-body .client-says {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .client-name {
+    font-size: 18px;
+  }
+  #testimonials .container-inner #bigCarousel .carousel-inner .carousel-item .item__inner .card .card-footer .profession {
+    font-size: 14px;
+    color: gray;
+  }
+}
+/*# sourceMappingURL=style.css.map */

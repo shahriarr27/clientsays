@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image9" width="35" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAAARklEQVRYhe3OoREAIBAEsXtm6Pv7RoBGrAaxqSC11+48VrM6Scbjx8UMMUPMEDPEDDFDzBAzxAwxQ8wQM8QMMUPMkK8yIgeDswRCneYPIAAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image9"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <path d="M 0 0 L 34.800781 0 L 34.800781 34.800781 L 0 34.800781 Z M 0 0 "/>
+</clipPath>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="35" height="35"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip1)">
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(70.196078%,82.352941%,100%);fill-opacity:1;" d="M 0 1.390625 C 0 0.621094 0.621094 0 1.390625 0 L 34.800781 0 L 34.800781 34.800781 L 1.390625 34.800781 C 0.621094 34.800781 0 34.179688 0 33.410156 Z M 0 1.390625 "/>
+</g>
+</g>
+<image id="image17" width="35" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAAAdklEQVRYhe3VoQ2AQAyF4dfLTYLGswOOIZCsgAHHAGyARqHPsgOTICgLXE0JCQnvs02b3xUgIiKCeJb0XCpIU+cv9rvEafPcjZ4lYCwha5sd6RABX0zwxbyDMRbGWBhjYYzlUzG+d3AVCSF12ZnOx5MgIiL6vRstZxAsfreyiQAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<use xlink:href="#image17"/>
+  </g>
+</mask>
+<clipPath id="clip3">
+  <rect x="0" y="0" width="35" height="35"/>
+</clipPath>
+<g id="surface16" clip-path="url(#clip3)">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(12.941176%,44.705882%,90.980392%);fill-opacity:1;" d="M 13.570312 17.402344 C 13.570312 17.132812 13.675781 16.863281 13.878906 16.664062 L 19.097656 11.441406 C 19.503906 11.035156 20.164062 11.035156 20.574219 11.441406 C 20.980469 11.851562 20.980469 12.511719 20.574219 12.917969 L 16.089844 17.402344 L 20.574219 21.882812 C 20.980469 22.289062 20.980469 22.949219 20.574219 23.359375 C 20.164062 23.765625 19.503906 23.765625 19.097656 23.359375 L 13.878906 18.136719 C 13.675781 17.9375 13.570312 17.667969 13.570312 17.402344 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface8" mask="url(#mask0)"/>
+<use xlink:href="#surface16" mask="url(#mask1)"/>
+</g>
+</svg>
